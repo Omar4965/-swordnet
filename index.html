@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGGIN</title>
+    <link rel= "stylesheet" href="css/estiloslogin.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="elegir"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Iniciar Sesión</button>
+                <button type="button" class="toggle-btn" onclick="registrar()">Registrar</button>
+            </div>
+            <div class="redes-sociales">
+                <a href="https://es-la.facebook.com/"><img src="img/facebook.png" alt="icono_facebook"></a>
+                <a href="https://www.instagram.com/?hl=es"><img src="img/instagram.png" alt="icono_instagram"></a>
+                <a href="https://www.google.com/gmail/"><img src="img/gmail.jpg" alt="icono_gmail"></a>
+            </div>
+        <section id="formulario">
+
+            <form name="Nuevo_Usuario" action="registro.php" method="POST" id="registrar" class="input-group">
+                <input name="nickname" type="text" class="input-field" placeholder="Nombre De Usuario" required>
+                <input name="correo" type="email" class="input-field" placeholder="Correo" required>
+                <input name="contraseña" type="password" class="input-field" placeholder="Contraseña" required>
+                <input type="checkbox" class="checkbox">
+                <span>Acepto Terminos y Condiciones</span>
+                <button type="submit" class="submit-btn">Registrar</button>
+            </form>
+            
+        </section>
+        <section id="formulario2">
+            <form name="contacto" action="diarios.html" method="post" id="login" class="input-group">
+                <input name="nickname" type="text" class="input-field" placeholder="Nombre De Usuario" required>
+                <input name="contraseña" type="password" class="input-field" placeholder="Contraseña" required>
+                <input type="checkbox" class="checkbox">
+                <span>Recordar Contraseña</span>
+                <button type="submit" class="submit-btn">Acceder</button>
+            </form>
+        </section>
+        </div>
+    </div>
+<script>
+    var x =document.getElementById("login");
+    var y =document.getElementById("registrar");
+    var z =document.getElementById("elegir");
+
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+
+        function registrar(){
+            x.style.left = "400px";
+            y.style.left = "50px";
+            z.style.left = "0px";
+        }
+</script>
+
+
+</body>
+</html>
